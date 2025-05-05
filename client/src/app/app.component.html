@@ -1,9 +1,12 @@
-<h1>{{title}}</h1>
-<ul>
-    @for (user of users; track user.id){
-        <li>{{user.id}} - {{user.userName}}</li>
-    }
-</ul>
-<ul *ngFor="let user of users" >
+<app-nav></app-nav>
+<div class="container" style="margin-top: 100px;">
+    <!-- <ul>
+        @for (user of users; track user.id){
+            <li>{{user.id}} - {{user.userName}}</li>
+        }
+    </ul> -->
+    <app-home></app-home>
+</div>
+<!-- <ul *ngFor="let user of users" >
     <li>{{user.id}} - {{user.userName}}</li>
-</ul>
+</ul> -->
